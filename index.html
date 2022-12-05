@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="theme.js"></script>
+  <script>
+    $(document).ready(function () {
+      setTheme()
+    });
+  </script>
+  <title>Webshop</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: var(--color);
+    }
+    .container {
+      text-align: center;
+      margin: 3rem;
+    }
+    .container div {
+      display: inline-block;
+      width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="theme-btn" onclick="toggleTheme()">
+    <!-- https://icons.getbootstrap.com/icons/brightness-high-fill/ -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+      <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+    </svg>
+  </button>
+  <div class="navbar">
+    <ul>
+      <li><a class="active link" href="index.html">Kezdőlap</a></li>
+      <li><a class="link" href="ferfi.html">Férfi ruhák</a></li>
+      <li><a class="link" href="noi.html">Női ruhák</a></li>
+        <div class="dropdown">
+          <a href="kosar.html">
+            <button class="dropbtn">Kosár</button>
+            </a>
+              <div class="dropdown-content" id="cartDropDownContent">
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div style="float: left;">
+      <h1 class="title"><a href="ferfi.html">Férfi ruhák</a></h1>
+    </div>
+    <div style="float: right;">
+      <h1 class="title"><a href="noi.html">Női ruhák</a></h1>
+    </div>
+  </div>
+</body>
+</html>
